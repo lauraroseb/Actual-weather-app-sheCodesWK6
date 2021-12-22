@@ -1,0 +1,38 @@
+body {
+  margin: 80px 100px;
+  border: 2px solid #952e6d;
+  border-radius: 70px;
+  padding: 40px;
+}
+h1 {
+  font-family: "Amatic SC", cursive;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 120px;
+  color: #952e6d;
+}
+
+.currentWeather {
+  font-family: "Amatic SC", cursive;
+  font-family: "Zen Kurenaido", sans-serif;
+  color: #952e6d;
+  font-size: 50px;
+  border: #952e6d solid 3px;
+  border-radius: 25px;
+  padding: 1%;
+  margin-left: 50px;
+}
+.weekAhead {
+  font-family: "Amatic SC", cursive;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 50px;
+  color: #952e6d;
+}
+.cloudIcon {
+  font-size: 75px;
+}
+.weatherIcons {
+  font-family: "Amatic SC", cursive;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 100px;
+  color: #952e6d;
+}
