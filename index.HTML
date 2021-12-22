@@ -2,6 +2,7 @@
 <html>
 
 <head>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<title>WeatherApp</title>
 	<meta charset="UTF-8" />
 	<script src="https://kit.fontawesome.com/10e4e6df60.js" crossorigin="anonymous"></script>
@@ -28,38 +29,50 @@
 </head>
 
 <body>
-	<div class="container">
+	<form>
+		<input
+								type="text"
+								placeholder="Current City"
+								class="form-control"
+								id="search-input"
+								autofocus/>
+	</form>
       
 		<div class="row">
 			<div class="col-sm-6">
 				 <div class="form-floating mb-3">
-							<input
-								type="text"
-								placeholder="Current City"
-								class="form-control"
-								id="floatingInput"
-								autofocus/>
-					 <label for"floatingInput">Current City</label> 
+							
+					 
 			</div>
 		 
 				 <button type="button" class="btn btn-primary" input type="submit">
 							Search
 						</button>
-			
+			<button type="button" id="current-location-button" class="btn btn-success" input type="submit">
+			Current Location
+			</button>
 		</div>
 	</div>
 		 <span class="weekAhead">
 						<div class="container">
 		<div class="row">
 			<div class="col">
-			 <h1>Dover</h1>
-			 <p id=currentDate></p>
-			 <br />
-			</div>
+			 <h1 id="city"></h1>
+			 <p id="currentDate"></p>
+			 
+		
+			</div> 
 			<div class="col">
-				<span class="currentWeather">7°C Partly Cloudy<i class="fas fa-cloud cloudIcon"></i></span>
+				<span class="temperature" id="temperature">
+					 </span> <span class="currentWeather"><p id="description"></p><i class="fas fa-cloud cloudIcon"></i></span>
 			</div>
 			</div>   
+			<ul>
+			
+				<li> Humidity <span id="humidity"> </span> </li>
+				<li> Wind <span id="wind"> </span> </li> 
+			</ul>
+		</br>
 			<span class="weekAhead">
 						<div class="container">
 		<div class="row">
@@ -107,9 +120,8 @@
 	</div>
 			 
 	</div>
-		</body><a href="https://github.com/lauraroseb/Actual-weather-app-sheCodesWK6">My project on Netlify</a>
+		</body>	<a href="https://github.com/lauraroseb/Actual-weather-app-sheCodesWK6">My project on Netlify</a>
 	</html>
-
 </body>
 
 </html>
